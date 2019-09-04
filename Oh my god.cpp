@@ -1,5 +1,5 @@
 /** 
- * @author Jane Programmer
+ * @author Klay Dabbs
  * @cwid   123 45 678
  * @class  COSC 2336, Spring 2019
  * @ide    Visual Studio Community 2017
@@ -109,10 +109,10 @@ string RetirementAccount::tostring()
 {
 	ostringstream output;
 	output << "    D (deposit amount)   = $" << fixed << setprecision(2) << get_D() << endl;
-    output << "    m (periods per year) =  " << fixed << setprecision(2) << get_m() << endl;
-    output<< "    r (interest rate)    =  " << fixed << setprecision(4) << get_r() << endl;
-    output<< "    t (time in years)    =  " << fixed << setprecision(2) <<get_t() << endl;
-    output<< endl;
+        output << "    m (periods per year) =  " << fixed << setprecision(2) << get_m() << endl;
+        output<< "    r (interest rate)    =  " << fixed << setprecision(4) << get_r() << endl;
+        output<< "    t (time in years)    =  " << fixed << setprecision(2) <<get_t() << endl;
+        output<< endl;
 	
 	return output.str();
 }
