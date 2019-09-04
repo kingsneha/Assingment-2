@@ -110,9 +110,9 @@ string RetirementAccount::tostring()
 	ostringstream output;
 	output << "    D (deposit amount)   = $" << fixed << setprecision(2) << get_D() << endl;
         output << "    m (periods per year) =  " << fixed << setprecision(2) << get_m() << endl;
-        output<< "    r (interest rate)    =  " << fixed << setprecision(4) << get_r() << endl;
-        output<< "    t (time in years)    =  " << fixed << setprecision(2) <<get_t() << endl;
-        output<< endl;
+        output << "    r (interest rate)    =  " << fixed << setprecision(4) << get_r() << endl;
+        output << "    t (time in years)    =  " << fixed << setprecision(2) <<get_t() << endl;
+        output << endl;
 	
 	return output.str();
 }
@@ -127,10 +127,10 @@ double RetirementAccount::calculateRetirementSavings()
 
 double RetirementAccount::planRetirementDeposits(double S)
 {
-	double sum = 0;
-	sum = (S*(r/m))/((pow(1 + r/m, m*t)- 1));
+	double D = 0;
+	D = (S*(r/m))/((pow(1 + r/m, m*t)- 1));
 	
-	return sum;
+	return D;
 	
 }
 /** main 
